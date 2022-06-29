@@ -1,5 +1,5 @@
 # Tinu
-Cost effective particulate matter sensor unit 
+*Tinu* is a cost effective 
 
 # Input in Board Manager 
 http://arduino.esp8266.com/stable/package_esp8266com_index.json
