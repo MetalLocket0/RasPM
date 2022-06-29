@@ -1,4 +1,4 @@
-# RasPM
+# Tinu
 Cost effective particulate matter sensor unit 
 
 # Input in Board Manager 
