@@ -103,7 +103,7 @@ If intrestesed in my project, want to give suggestions, or want to help, contact
 Special thanks to NYIT for sponsoring my project! 
 ![RGB_color_NYIT_logo](https://user-images.githubusercontent.com/74558614/176455586-e98825ad-07e4-4b2e-bd82-86eb34fbcab9.png)
 
-# Input in Board Manager 
+### Input in Board Manager 
 http://arduino.esp8266.com/stable/package_esp8266com_index.json
 https://dl.espressif.com/dl/package_esp32_index.json
 https://github.com/Heltec-Aaron-Lee/WiFi_Kit_series/releases/download/0.0.5/package_heltec_esp32_index.json
