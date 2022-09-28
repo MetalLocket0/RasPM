@@ -1,3 +1,9 @@
+/*
+Save temperature in SD/microSD card every hour with DS3231 + SD/microSD module + Arduino
+modified on 15 Apr 2019
+by Mohammadreza Akbari @ Electropeak
+https://electropeak.com/learn/
+*/
 #include <SPI.h>
 #include <SD.h>
 #include <Wire.h>
