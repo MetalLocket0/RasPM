@@ -1,19 +1,13 @@
-/*
-Save temperature in SD/microSD card every hour with DS3231 + SD/microSD module + Arduino
-modified on 15 Apr 2019
-by Mohammadreza Akbari @ Electropeak
-https://electropeak.com/learn/
-*/
 #include <SPI.h>
 #include <SD.h>
 #include <Wire.h>
 #include "SparkFun_SCD4x_Arduino_Library.h"
 SCD4x mySensor;
-File dataFile = SD.open("air.txt", FILE_WRITE);
+File dataFile;
 
-void save_data() {
+void dataLog() {
 dataFile = SD.open("air.txt", FILE_WRITE);
-dataFile.print(F("START"));
+dataFile.println(F("START"));
 dataFile.print(":");
 dataFile.print(F("CO2(ppm):")); 
 dataFile.print(mySensor.getCO2());
@@ -33,10 +27,11 @@ Serial.println("initialization failed!");
 while (1);
 }
 Serial.println("initialization done.");
+dataFile = SD.open("air.txt", FILE_WRITE);
+dataFile.println("START");
 }
 
 void loop ()
 {
-save_data();
-delay(5000);
+
 }
