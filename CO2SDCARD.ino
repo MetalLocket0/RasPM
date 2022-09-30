@@ -8,9 +8,8 @@ https://electropeak.com/learn/
 #include <SD.h>
 #include <Wire.h>
 #include "SparkFun_SCD4x_Arduino_Library.h"
-SCD4x mySensor;
 File dataFile;
-
+/*
 void dataLog() {
 dataFile = SD.open("air.txt", FILE_WRITE);
 dataFile.println(F("START"));
@@ -23,6 +22,7 @@ dataFile.print(F("\tHumidity(%RH):"));
 dataFile.print(mySensor.getHumidity(), 1);
 dataFile.close();
 }
+*/
 void setup ()
 {
 Wire.begin();
@@ -34,10 +34,9 @@ while (1);
 }
 Serial.println("initialization done.");
 dataFile = SD.open("air.txt", FILE_WRITE);
-dataFile.println("START");
 }
 
 void loop ()
 {
-
+  dataFile.println("START");
 }
