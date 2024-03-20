@@ -259,7 +259,7 @@ bool read_all()
 
     ret = sps30.GetValues(&val);
 
-    // data might not have been ready
+    // data might not have been ready`
     if (ret == ERR_DATALENGTH){
 
         if (error_cnt++ > 3) {
